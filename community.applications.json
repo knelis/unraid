@@ -1,0 +1,13 @@
+{
+  "Apps": [
+    {
+      "name": "Knelis / Caddy-Transip",
+      "description": "A custom Caddy TransIP enabled Docker container",
+      "note": "A custom Caddy TransIP enabled Docker container",
+      "repo": "registry.nidamagr.nl/caddy-transip",
+      "registry": "https://registry.nidamagr.nl/caddy-transip",
+      "icon": "https://raw.githubusercontent.com/knelis/caddy-transip/main/icons/caddy.png",
+      "documentation": "https://github.com/knelis/caddy-transip"
+    }
+  ]
+}
