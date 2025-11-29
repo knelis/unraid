@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>caddy-transip</Name>
+  <Repository>registry.nidamagr.nl/caddy-transip:2.10.2-2</Repository>
+  <Registry>https://registry.nidamagr.nl/caddy-transip:2.10.2-2</Registry>
+  <Network/>
+  <Shell/>
+  <Privileged>true</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/knelis/unraid/refs/heads/main/icons/caddy.png</Icon>
+  <ExtraParams></ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled/>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config 
+	  Name="Caddy - Configuration" 
+	  Target="/config/caddy" 
+	  Default="/mnt/user/appdata/caddy-transip/config/" 
+	  Mode="rw" 
+	  Description="" 
+	  Type="Path" 
+	  Display="always" 
+	  Required="true" 
+	  Mask="false" />
+  <Config
+    Name="Caddy - Data"
+    Target="/data/caddy"
+    Default="/mnt/user/appdata/caddy-transip/data/"
+    Mode="rw"
+    Description=""
+    Type="Path"
+    Display="always"
+    Required="true"
+    Mask="false" />
+  <Config
+    Name="Caddy - etc"
+    Target="/etc/caddy"
+    Default="/mnt/user/appdata/caddy-transip/etc/"
+    Mode="rw"
+    Description=""
+    Type="Path"
+    Display="always"
+    Required="true"
+    Mask="false" />
+  <Config
+    Name="Caddy - https"
+    Target=""
+    Default="443"
+    Mode="tcp"
+    Description=""
+    Type="Port"
+    Display="always"
+    Required="true"
+    Mask="false" />
+  <Config
+    Name="Caddy - http"
+    Target=""
+    Default="80"
+    Mode="tcp"
+    Description=""
+    Type="Port"
+    Display="always"
+    Required="true"
+    Mask="false" />
+  <Config
+    Name="Caddy - API"
+    Target=""
+    Default="2019"
+    Mode="tcp"
+    Description=""
+    Type="Port"
+    Display="always"
+    Required="true"
+    Mask="false" />
+  <TailscaleStateDir/>
+</Container>
